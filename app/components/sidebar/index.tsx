@@ -32,7 +32,7 @@ const Sidebar: FC<ISidebarProps> = ({
   const { t } = useTranslation()
   return (
     <div
-      className="shrink-0 flex flex-col overflow-y-auto bg-white w-100 border-r border-gray-200 tablet:h-[4rem]"
+      className="shrink-0 flex flex-col overflow-y-auto bg-black w-100 border-r border-gray-200 tablet:h-[4rem]"
     >
       {list.length < MAX_CONVERSATION_LENTH && (
         <div className="flex flex-shrink-0 p-4 !pb-0" style={{width:'fit-content'}}>
