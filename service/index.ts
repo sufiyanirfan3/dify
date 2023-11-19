@@ -16,11 +16,11 @@ export const sendChatMessage = async (body: Record<string, any>, { onData, onCom
 }
 
 export const fetchConversations = async () => {
-  return get('conversations', { params: { limit: 20, first_id: '' } })
+  return get('conversations', { params: { limit: 200, first_id: '' } })
 }
 
 export const fetchChatList = async (conversationId: string) => {
-  return get('messages', { params: { conversation_id: conversationId, limit: 20, last_id: '' } })
+  return get('messages', { params: { conversation_id: conversationId, limit: 200, last_id: '' } })
 }
 
 // init value. wait for server update
